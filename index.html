@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Pedro Henrique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/fontawesome.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/flavio-ricardo-logo-300.webp" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Trabalhos</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+        <ul class="social">
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-behance"></i></a></li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <h1><span>Pedro</span> Henrique</h1>
+            <p class="lead">Desenvolvedor Web e Designer.</p>
+            <div class="foto">
+                <img src="assets/flavio-ricardo-600p.webp" alt="">
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <h2>Sobre</h2>
+            <div class="about">
+                <div class="badge">
+                    <span>Sobre mim</span>
+                </div>
+                <h2>Design com propósito. Código com precisão.</h2>
+                <p>Sou um Desenvolvedor Web FullStack Criativo e transformo ideias em poderorsos produtos digitais.</p>
+                <p>Transitando entre Design Gráfico, Design UI/UX e Desenvolvimento Web, alinho o melhor destes mundos em projetos de alta conversão.</p>
+            </div>
+            <div class="whatido">
+                <div class="badge">
+                    <span>O que eu faço</span>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Sites modernos, responsivos e de alta performance para impulsionar o seu negócio.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>Design Gráfico & Digital</h3>
+                        <p>Identidades visuais marcantes e peças criativas para destacar sua marca no digital.
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-display"></i>
+                        <h3>Design UI/UX</h3>
+                        <p>Interfaces intuitivas e experiências de navegação focadas na conversão.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="trabalhos" id="trabalhos">
+            <h2>Trabalhos Selecionados</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="jobFoto"></div>
+                    <div class="text">
+                        <h3>Projeto Nike</h3>
+                        <p>Plataforma imersiva desenvolvida para exibir a galeria de fotos da nova coleção Nike. Estruturada com um layout limpo e responsivo.</p>
+                        <span class="tipo">Desenvolvimento Web</span>
+                        <button type="button" class="btnOpen">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="jobFoto"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint mollitia sed alias natus neque itaque minus ab architecto libero nemo?</p>
+                        <span class="tipo">Design UI/UX</span>
+                        <button type="button" class="btnOpen">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="jobFoto"></div>
+                    <div class="text">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint mollitia sed alias natus neque itaque minus ab architecto libero nemo?</p>
+                        <span class="tipo">Design Gráfico</span>
+                        <button type="button" class="btnOpen">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contato" id="contato">
+            <h2>Entre em contato</h2>
+            <div class="dadosContato">
+                <h3>Tem um projeto para tirar do papel?</h3>
+                <p>Entre em contato e vamos conversar sobre ele!</p>
+                <a href="tel:+5511947091137">
+                    <i class="fa-solid fa-mobile-screen"></i> Ligue agora
+                </a>
+                <a href="https://wa.me/5511947091137">
+                    <i class="fa-brands fa-whatsapp"></i> Chame no WhatsApp
+                </a>
+                <a href="mailto:contact@flavioricardo.com.br">
+                    <i class="fa-regular fa-paper-plane"></i> Envie um e-mail
+                </a>
+                <p>Se preferir, preencha o formulário ao lado!</p>
+            </div>
+
+            <form class="formContato">
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" required>
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg" required></textarea>
+                <div class="btns">
+                    <button type="reset">Limpar</button>
+                    <button type="button" id="enviar">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span>. Flávio Ricardo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
